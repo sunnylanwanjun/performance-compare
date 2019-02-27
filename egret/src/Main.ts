@@ -68,7 +68,13 @@ class Main extends eui.UILayer {
         try {
             const loadingView = new LoadingUI();
             this.stage.addChild(loadingView);
-            await RES.loadConfig("resource/default.res.json", "resource/");
+
+            if (platform["name"] === 'wxgame' ) {
+                // 此url所在目录结构与resource相同
+                await RES.loadConfig("default.res.json", "http://192.168.199.216/download/compare/egret/");
+            } else {
+                await RES.loadConfig("resource/default.res.json", "resource/");    
+            }
             await this.loadTheme();
             await RES.loadGroup("preload", 0, loadingView);
             this.stage.removeChild(loadingView);
