@@ -20,7 +20,7 @@ cc.Class({
 
     start () {
         this.objArr = [];
-        this.num.string = this.container.childrenCount;
+        this.num.string = "0";
     },
 
     add () {
@@ -31,14 +31,7 @@ cc.Class({
             this.container.addChild(node);
             this.objArr.push(node);
         }
-        this.num.string = this.container.childrenCount;
-    },
-
-    update () {
-        if (this.count !== this.container.childrenCount) {
-            this.count = this.container.childrenCount;
-            this.num.string = this.count;
-        }
+        this.num.string = this.objArr.length;
     },
 
     del () {
@@ -48,7 +41,7 @@ cc.Class({
                 node.destroy();
             }
         }
-        this.num.string = this.container.childrenCount;
+        this.num.string = this.objArr.length;
     },
 
     back () {
