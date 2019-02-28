@@ -12,8 +12,7 @@ var isAdding = false;
 var count = 0;
 var number;
 
-var amount = 1000;
-var deleteCount = 1000;
+var amount = 100;
 
 var checking = false;
 var totalDt = 0;
@@ -85,26 +84,6 @@ cc.Class({
         });
     },
 
-    deleteBunny: function () {
-        var curDelCount = 0;
-        for (var i = 0; i < this.levelCount; i++) 
-        {
-            var lbunnys = bunnys[i];
-            for (var j = lbunnys.length - 1; j >= 0; j--) {
-                var bunny = lbunnys[j];
-                bunny.destroy();
-                curDelCount ++;
-                count--;
-                lbunnys.pop();
-                if (curDelCount === deleteCount) {
-                    number.innerText = count;
-                    return;
-                }
-            }
-        }
-        number.innerText = count;
-    },
-
     add: function () {
         this.addOnce();
         this.scheduleOnce(this.check, 5);
@@ -163,8 +142,6 @@ cc.Class({
     },
 
     addOnce: function () {
-        if (count>= 30000) return;
-
         let amountPerLevel = Math.floor(amount / this.levelCount);
         let parent = this.node;
     
@@ -183,19 +160,18 @@ cc.Class({
                 bunny.anchorY = 1;
                 //bunny.alpha = 0.3 + Math.random() * 0.7;
                 lbunnys.push(bunny);
-                bunny.scale = 0.3;
+                bunny.scale = 0.3 * (0.5 + Math.random()*0.5);
                 bunny.angle = 360 * (Math.random()*0.2 - 0.1);
 
                 bunny.parent = parent;
                 count++;
-                if (count>= 30000) break;
             }
-            if (count>= 30000) break;
-            // var nextContainer = new cc.Node();
-            // parent.addChild(nextContainer);
-            // parent = nextContainer;
+            var nextContainer = new cc.Node();
+            parent.addChild(nextContainer);
+            parent = nextContainer;
         }
         number.innerText = count;
+        isAdding = false;
     },
 
     // called every frame, uncomment this function to activate update callback
