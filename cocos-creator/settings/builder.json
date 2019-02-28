@@ -39,8 +39,8 @@
   "title": "performance-compare",
   "webOrientation": "auto",
   "wechatgame": {
-    "REMOTE_SERVER_ROOT": "http://192.168.199.216/download/compare/cocos/",
-    "appid": "",
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
     "orientation": "portrait",
     "subContext": ""
   },
