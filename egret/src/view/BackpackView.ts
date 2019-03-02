@@ -7,16 +7,16 @@ class BackpackItem extends eui.Component
     private star5:eui.Image;
     private hero:eui.Image;
     private heroIcons = [
-        "ic_captain_jack_png",
-        "ic_drakan_png",
-        "ic_hilf_png",
-        "ic_mermaid_png",
-        "ic_mermaidqueen_png",
-        "ic_norm_png",
-        "ic_oceaking_png",
-        "ic_oceantriton_png",
-        "ic_salamander_png",
-        "ic_sundine_png",
+        "heroslot.ic_captain_jack",
+        "heroslot.ic_drakan",
+        "heroslot.ic_hilf",
+        "heroslot.ic_mermaid",
+        "heroslot.ic_mermaidqueen",
+        "heroslot.ic_norm",
+        "heroslot.ic_oceaking",
+        "heroslot.ic_oceantriton",
+        "heroslot.ic_salamander",
+        "heroslot.ic_sundine",
     ]
     constructor() {
         super();
