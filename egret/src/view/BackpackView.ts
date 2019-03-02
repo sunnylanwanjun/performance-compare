@@ -50,10 +50,12 @@ class BackpackComponent extends eui.Component
     private addBtn:eui.Image;
     private curNum:eui.Label;
     private list:eui.Group;
+    private scroller:eui.Scroller;
     private addCount:number = 20;
     private heroSlots = new Array;
     private curCount:number = 0;
-
+    private percent:number = 0;
+    private pingpong:number = 1;
     constructor() {
         super();
         this.skinName = "Backpack";
@@ -63,6 +65,18 @@ class BackpackComponent extends eui.Component
     private init() {
         this.close.addEventListener(egret.TouchEvent.TOUCH_TAP, this.toSelect, this);
         this.addBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.addSomeHeroSlot, this);
+        this.addEventListener(egret.Event.ENTER_FRAME, this.update, this);
+    }
+
+    private update() {
+        this.percent += this.pingpong;
+        let max = this.scroller.viewport.contentHeight - this.scroller.viewport.height;
+        this.scroller.viewport.scrollV = Math.min(Math.max(this.percent, 0), max);
+        if (this.percent <= 0) {
+            this.pingpong = 1;
+        } else if (this.percent >= max) {
+            this.pingpong = -1;
+        }
     }
 
     private addSomeHeroSlot() {

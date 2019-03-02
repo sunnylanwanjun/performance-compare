@@ -20,7 +20,24 @@ cc.Class({
     onEnable: function () {
         this.curCount = 0;
         this.heroSlots = [];
+        this.percent = 0;
+        this.pingpong = 0.01;
+        this.timeslot = 0;
+        this.timetotal = 0;
         this.addSomeHeroSlot();
+    },
+
+    update: function (dt) {
+        let time = this.scrollView.content.height / this.scrollView.node.height;
+        this.percent += this.pingpong / time;
+        let p = Math.min(Math.max(0, this.percent), 1);
+        this.scrollView.scrollToPercentVertical(p);
+        if(this.percent >= 1)
+        {
+            this.pingpong = -0.01;
+        } else if (this.percent <= 0) {
+            this.pingpong = 0.01;
+        }
     },
 
     addSomeHeroSlot: function () {
