@@ -15,7 +15,9 @@
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
+		"bin-debug/view/BackpackView.js",
 		"bin-debug/view/DBView.js",
+		"bin-debug/view/ProgressView.js",
 		"bin-debug/view/SelectView.js",
 		"bin-debug/view/SheepView.js"
 	]

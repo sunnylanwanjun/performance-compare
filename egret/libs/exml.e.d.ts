@@ -1,4 +1,14 @@
 declare module skins{
+	class ProgressTextTest extends eui.Skin{
+	}
+}
+declare class progress extends eui.Skin{
+}
+declare class Backpack extends eui.Skin{
+}
+declare class HeroSlot extends eui.Skin{
+}
+declare module skins{
 	class ButtonSkin extends eui.Skin{
 	}
 }

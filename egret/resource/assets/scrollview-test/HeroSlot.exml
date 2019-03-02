@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HeroSlot" width="95" height="122" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bg" width="95" height="122" x="0" y="0" source="rare1_png"/>
+	<e:Image id="hero" anchorOffsetX="0.53" anchorOffsetY="0.4" source="ic_hilf_png" height="156" width="152" x="-28" y="-22"/>
+	<e:Image id="attr" width="26" height="26" x="67" y="5" source="att_earth_png"/>
+	<e:Image id="rank" width="30" height="30" x="0" y="91" source="a_highlight_png"/>
+	<e:Group width="60" height="23" x="24" y="94.5" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image id="star1" width="20" height="20" x="20" y="-34" scaleX="1" scaleY="1" source="star_small_png"/>
+		<e:Image id="star2" width="20" height="20" y="67" x="-30" scaleX="1" scaleY="1" source="star_small_png"/>
+		<e:Image id="star3" width="20" height="20" x="84" y="17" scaleX="1" scaleY="1" source="star_small_png"/>
+		<e:Image id="star4" width="20" height="20" x="44" y="123" scaleX="1" scaleY="1" source="star_small_png"/>
+		<e:Image id="star5" width="20" height="20" x="82" y="79" scaleX="1" scaleY="1" source="star_small_png"/>
+		<e:layout>
+			<e:HorizontalLayout gap="-8"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>
