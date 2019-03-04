@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.barskin" minWidth="30" minHeight="18" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="thumb" height="100%" width="100%" source="thumb_pb_png"/>
+</e:Skin>

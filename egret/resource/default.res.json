@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "button_down_png,button_up_png,description_json,SwordsMan_tex_png,SwordsMan_tex_json,SwordsMan_ske_json,block_png,bunny_png,selected_png,border_png,header_png,thumb_pb_png,track_pb_png,roundthumb_png,track_sb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,checkbox_unselect_png,checkbox_select_disabled_png,checkbox_select_up_png,checkbox_select_down_png,bg_png,heroslot",
+			"keys": "button_down_png,button_up_png,description_json,SwordsMan_tex_png,SwordsMan_tex_json,SwordsMan_ske_json,block_png,bunny_png,selected_png,border_png,header_png,thumb_pb_png,track_pb_png,roundthumb_png,track_sb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,checkbox_unselect_png,checkbox_select_disabled_png,checkbox_select_up_png,checkbox_select_down_png,bg_png,heroslot,bar_png",
 			"name": "preload"
 		}
 	],
@@ -166,6 +166,11 @@
 			"type": "sheet",
 			"name": "heroslot",
 			"subkeys": "a,a_highlight,att_earth,att_fire,att_water,att_wind,b,b_highlight,bg_frame,bg_panel_blue,btn_blue,btn_close,btns_hero,c,c_highlight,d,d_highlight,empty,ic_captain_jack,ic_drakan,ic_hilf,ic_mermaid,ic_mermaidqueen,ic_norm,ic_oceaking,ic_oceantriton,ic_salamander,ic_shilf,ic_snrom,ic_ssalamander,ic_sundine,ic_undine,rare1,rare2,rare3,s,s_highlight,singleColor,star_small,title_backpack,title_bg"
+		},
+		{
+			"name": "bar_png",
+			"type": "image",
+			"url": "assets/progress-text/bar.png"
 		}
 	]
 }

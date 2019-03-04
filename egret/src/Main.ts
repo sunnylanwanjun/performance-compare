@@ -71,7 +71,7 @@ class Main extends eui.UILayer {
 
             if (platform["name"] === 'wxgame' ) {
                 // 此url所在目录结构与resource相同
-                await RES.loadConfig("default.res.json", "http://192.168.199.216/download/compare/egret/");
+                await RES.loadConfig("default.res.json", "http://10.44.61.29:8080/egret_wxgame/");
             } else {
                 await RES.loadConfig("resource/default.res.json", "resource/");    
             }

@@ -15,8 +15,8 @@
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
+		"resource/assets/progress-text/bar-skin.exml",
 		"resource/assets/progress-text/progress-text.exml",
-		"resource/eui_skins/ProgressBarSkin.exml",
 		"resource/assets/progress-text/progress.exml",
 		"resource/assets/scrollview-test/Backpack.exml",
 		"resource/assets/scrollview-test/HeroSlot.exml",
@@ -26,6 +26,7 @@
 		"resource/eui_skins/HSliderSkin.exml",
 		"resource/eui_skins/ItemRendererSkin.exml",
 		"resource/eui_skins/PanelSkin.exml",
+		"resource/eui_skins/ProgressBarSkin.exml",
 		"resource/eui_skins/RadioButtonSkin.exml",
 		"resource/eui_skins/ScrollerSkin.exml",
 		"resource/eui_skins/TextInputSkin.exml",

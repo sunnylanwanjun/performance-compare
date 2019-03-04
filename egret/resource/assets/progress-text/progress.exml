@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="progress" width="100" height="20" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:ProgressBar id="bar" width="100" height="20" x="0" y="0" slideDuration="500" enabled="true" cacheAsBitmap="true" skinName="skins.ProgressBarSkin"/>
+	<e:ProgressBar id="bar" width="100" height="20" x="0" y="0" slideDuration="500" enabled="true" cacheAsBitmap="true" skinName="skins.barskin"/>
 </e:Skin>
