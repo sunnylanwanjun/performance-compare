@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "button_down_png,button_up_png,description_json,SwordsMan_tex_png,SwordsMan_tex_json,SwordsMan_ske_json,block_png,bunny_png,selected_png,border_png,header_png,thumb_pb_png,track_pb_png,roundthumb_png,track_sb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,checkbox_unselect_png,checkbox_select_disabled_png,checkbox_select_up_png,checkbox_select_down_png,bg_png,ic_captain_jack_png,ic_drakan_png,ic_hilf_png,ic_mermaid_png,ic_mermaidqueen_png,ic_norm_png,ic_oceaking_png,ic_oceantriton_png,ic_salamander_png,ic_shilf_png,ic_snrom_png,ic_ssalamander_png,ic_sundine_png,ic_undine_png,bg_frame_png,a_highlight_png,att_earth_png,btn_close_png,bg_panel_blue_png,rare1_png,singleColor_png,star_small_png,title_bg_png,btn_blue_png,btns_hero_png,title_backpack_png",
+			"keys": "button_down_png,button_up_png,description_json,SwordsMan_tex_png,SwordsMan_tex_json,SwordsMan_ske_json,block_png,bunny_png,selected_png,border_png,header_png,thumb_pb_png,track_pb_png,roundthumb_png,track_sb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,checkbox_unselect_png,checkbox_select_disabled_png,checkbox_select_up_png,checkbox_select_down_png,bg_png,heroslot,bar_png",
 			"name": "preload"
 		}
 	],
@@ -162,134 +162,15 @@
 			"name": "_DS_Store"
 		},
 		{
-			"url": "assets/scrollview-test/heroslot/ic_captain_jack.png",
-			"type": "image",
-			"name": "ic_captain_jack_png"
+			"url": "assets/scrollview-test/heroslot/heroslot.json",
+			"type": "sheet",
+			"name": "heroslot",
+			"subkeys": "a,a_highlight,att_earth,att_fire,att_water,att_wind,b,b_highlight,bg_frame,bg_panel_blue,btn_blue,btn_close,btns_hero,c,c_highlight,d,d_highlight,empty,ic_captain_jack,ic_drakan,ic_hilf,ic_mermaid,ic_mermaidqueen,ic_norm,ic_oceaking,ic_oceantriton,ic_salamander,ic_shilf,ic_snrom,ic_ssalamander,ic_sundine,ic_undine,rare1,rare2,rare3,s,s_highlight,singleColor,star_small,title_backpack,title_bg"
 		},
 		{
-			"url": "assets/scrollview-test/heroslot/ic_drakan.png",
+			"name": "bar_png",
 			"type": "image",
-			"name": "ic_drakan_png"
-		},
-		{
-			"url": "assets/scrollview-test/heroslot/ic_hilf.png",
-			"type": "image",
-			"name": "ic_hilf_png"
-		},
-		{
-			"url": "assets/scrollview-test/heroslot/ic_mermaid.png",
-			"type": "image",
-			"name": "ic_mermaid_png"
-		},
-		{
-			"url": "assets/scrollview-test/heroslot/ic_mermaidqueen.png",
-			"type": "image",
-			"name": "ic_mermaidqueen_png"
-		},
-		{
-			"url": "assets/scrollview-test/heroslot/ic_norm.png",
-			"type": "image",
-			"name": "ic_norm_png"
-		},
-		{
-			"url": "assets/scrollview-test/heroslot/ic_oceaking.png",
-			"type": "image",
-			"name": "ic_oceaking_png"
-		},
-		{
-			"url": "assets/scrollview-test/heroslot/ic_oceantriton.png",
-			"type": "image",
-			"name": "ic_oceantriton_png"
-		},
-		{
-			"url": "assets/scrollview-test/heroslot/ic_salamander.png",
-			"type": "image",
-			"name": "ic_salamander_png"
-		},
-		{
-			"url": "assets/scrollview-test/heroslot/ic_shilf.png",
-			"type": "image",
-			"name": "ic_shilf_png"
-		},
-		{
-			"url": "assets/scrollview-test/heroslot/ic_snrom.png",
-			"type": "image",
-			"name": "ic_snrom_png"
-		},
-		{
-			"url": "assets/scrollview-test/heroslot/ic_ssalamander.png",
-			"type": "image",
-			"name": "ic_ssalamander_png"
-		},
-		{
-			"url": "assets/scrollview-test/heroslot/ic_sundine.png",
-			"type": "image",
-			"name": "ic_sundine_png"
-		},
-		{
-			"url": "assets/scrollview-test/heroslot/ic_undine.png",
-			"type": "image",
-			"name": "ic_undine_png"
-		},
-		{
-			"url": "assets/scrollview-test/heroslot/bg_frame.png",
-			"type": "image",
-			"name": "bg_frame_png"
-		},
-		{
-			"url": "assets/scrollview-test/heroslot/a_highlight.png",
-			"type": "image",
-			"name": "a_highlight_png"
-		},
-		{
-			"url": "assets/scrollview-test/heroslot/att_earth.png",
-			"type": "image",
-			"name": "att_earth_png"
-		},
-		{
-			"url": "assets/scrollview-test/heroslot/btn_close.png",
-			"type": "image",
-			"name": "btn_close_png"
-		},
-		{
-			"url": "assets/scrollview-test/heroslot/bg_panel_blue.png",
-			"type": "image",
-			"name": "bg_panel_blue_png"
-		},
-		{
-			"url": "assets/scrollview-test/heroslot/rare1.png",
-			"type": "image",
-			"name": "rare1_png"
-		},
-		{
-			"url": "assets/scrollview-test/heroslot/singleColor.png",
-			"type": "image",
-			"name": "singleColor_png"
-		},
-		{
-			"url": "assets/scrollview-test/heroslot/star_small.png",
-			"type": "image",
-			"name": "star_small_png"
-		},
-		{
-			"url": "assets/scrollview-test/heroslot/title_bg.png",
-			"type": "image",
-			"name": "title_bg_png"
-		},
-		{
-			"url": "assets/scrollview-test/heroslot/btn_blue.png",
-			"type": "image",
-			"name": "btn_blue_png"
-		},
-		{
-			"url": "assets/scrollview-test/heroslot/btns_hero.png",
-			"type": "image",
-			"name": "btns_hero_png"
-		},
-		{
-			"url": "assets/scrollview-test/heroslot/title_backpack.png",
-			"type": "image",
-			"name": "title_backpack_png"
+			"url": "assets/progress-text/bar.png"
 		}
 	]
 }

@@ -1,4 +1,8 @@
 declare module skins{
+	class barskin extends eui.Skin{
+	}
+}
+declare module skins{
 	class ProgressTextTest extends eui.Skin{
 	}
 }

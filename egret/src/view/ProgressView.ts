@@ -22,7 +22,7 @@ class Progress extends eui.Component {
         super();
         this.skinName = "progress";
         this.bar.value = 0;
-        this.bar.labelDisplay.visible = false;
+        //this.bar.labelDisplay.visible = false;
         this.bar.cacheAsBitmap = true;
         this.addEventListener(egret.Event.ENTER_FRAME,this.onTick,this);
     }
