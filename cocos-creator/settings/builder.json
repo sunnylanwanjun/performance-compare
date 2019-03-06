@@ -7,13 +7,6 @@
     "scheme": "https",
     "skipRecord": false
   },
-  "appBundle": false,
-  "baidugame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "testappid",
-    "orientation": "portrait",
-    "subContext": ""
-  },
   "encryptJs": false,
   "excludeScenes": [],
   "fb-instant-games": {},
@@ -39,7 +32,7 @@
   "title": "performance-compare",
   "webOrientation": "auto",
   "wechatgame": {
-    "REMOTE_SERVER_ROOT": "",
+    "REMOTE_SERVER_ROOT": "http://10.44.61.193:8080",
     "appid": "wx6ac3f5090a6b99c5",
     "orientation": "portrait",
     "subContext": ""

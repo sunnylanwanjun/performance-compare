@@ -1,0 +1,5 @@
+<page>
+   <item name="loading.scene" props="" ifExport="Default" aName=""/>
+   <item name="start.scene" props="" ifExport="Default" aName=""/>
+   <item name="empty.scene" props="" ifExport="Default" aName=""/>
+</page>

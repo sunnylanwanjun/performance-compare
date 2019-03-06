@@ -28,6 +28,7 @@
 //////////////////////////////////////////////////////////////////////////////////////
 
 class Main extends eui.UILayer {
+    public static serverAddress: string = 'http://10.44.50.185:8080/miniGame/resource/';
 
     protected createChildren(): void {
         super.createChildren();
@@ -71,7 +72,7 @@ class Main extends eui.UILayer {
 
             if (platform["name"] === 'wxgame' ) {
                 // 此url所在目录结构与resource相同
-                await RES.loadConfig("default.res.json", "http://192.168.199.216/download/compare/egret/");
+                await RES.loadConfig("default.res.json", Main.serverAddress);
             } else {
                 await RES.loadConfig("resource/default.res.json", "resource/");    
             }
@@ -88,7 +89,7 @@ class Main extends eui.UILayer {
         return new Promise((resolve, reject) => {
             // load skin theme configuration file, you can manually modify the file. And replace the default skin.
             //加载皮肤主题配置文件,可以手动修改这个文件。替换默认皮肤。
-            let theme = new eui.Theme("resource/default.thm.json", this.stage);
+            let theme = new eui.Theme("default.thm.json", this.stage);
             theme.addEventListener(eui.UIEvent.COMPLETE, () => {
                 resolve();
             }, this);

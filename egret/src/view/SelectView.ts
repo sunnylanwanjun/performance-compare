@@ -7,7 +7,7 @@ class SelectView extends egret.DisplayObjectContainer {
 
     private init () 
     {
-        let btnList = [{label:"sheep",handle:this.toSheep}, {label:"dragon",handle:this.toDragonBones}];
+        let btnList = [{label:"sheep",handle:this.toSheep}, {label:"dragon",handle:this.toDragonBones}, {label:"loading", handle:this.toLoading} ];
         let btnWidth = 130;
         let btnHeight = 40;
         let yInterval = 20;
@@ -39,5 +39,11 @@ class SelectView extends egret.DisplayObjectContainer {
         let stage = this.stage;
         stage.removeChildren();
         stage.addChild(new DBView());
+    }
+
+    private toLoading (e: egret.TouchEvent) {
+        let stage = this.stage;
+        stage.removeChildren();
+        stage.addChild(new LoadingView());
     }
 }
