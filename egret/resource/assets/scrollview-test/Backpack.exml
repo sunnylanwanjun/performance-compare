@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Backpack" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="640" height="960" x="0" y="0" source="heroslot.singleColor"/>
+	<e:Image id="bg_blue" width="608.33" height="616" x="15.51" y="171.5" anchorOffsetX="0.51" anchorOffsetY="0.5" source="heroslot.bg_panel_blue"/>
+	<e:Image id="bg_frame" width="620" height="630" x="15.5" y="167.5" anchorOffsetX="0.5" anchorOffsetY="0.5" source="heroslot.bg_frame"/>
+	<e:Image id="title_bg" width="279" height="94" x="185.5" y="73" source="heroslot.title_bg"/>
+	<e:Image id="title_name" width="98" height="59" x="276" y="86" source="heroslot.title_backpack"/>
+	<e:Image id="close" width="82" height="82" x="553" y="145" source="heroslot.btn_close"/>
+	<e:Group width="180.3" height="57.58" x="90.08" y="716" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image width="148.66" height="58.99" x="0" y="0" anchorOffsetX="-1.46" anchorOffsetY="1.58" scaleX="1" scaleY="1" source="heroslot.btn_blue"/>
+		<e:Label id="curNum" text="0" y="13.42" textColor="0xffb400" anchorOffsetX="0.5" anchorOffsetY="0.5" x="67.79" scaleX="1" scaleY="1" verticalAlign="justify" textAlign="center"/>
+	</e:Group>
+	<e:Image id="addBtn" width="148.66" height="58.99" x="402.88" y="717.58" anchorOffsetX="-1.46" anchorOffsetY="1.58" touchEnabled="true" source="heroslot.btn_blue"/>
+	<e:Label text="添加" x="448.67" y="728.92" textColor="0xffb900" touchEnabled="false"/>
+	<e:Scroller id="scroller" width="514.15" height="443" x="63.61" y="257.5" anchorOffsetX="0">
+		<e:Group id="list" x="-34.85" y="-45.45" anchorOffsetX="0.5" anchorOffsetY="0.5">
+			<e:layout>
+				<e:TileLayout orientation="rows" horizontalAlign="left" verticalAlign="top"/>
+			</e:layout>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

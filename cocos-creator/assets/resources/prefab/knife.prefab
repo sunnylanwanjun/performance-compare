@@ -81,11 +81,10 @@
     "paused": false,
     "defaultSkin": "",
     "defaultAnimation": "sk_2",
-    "_preRenderMode": 1,
-    "_renderMode": 1,
+    "_preCacheMode": 1,
+    "_cacheMode": 1,
     "loop": true,
     "premultipliedAlpha": false,
-    "_premultipliedAlpha": false,
     "timeScale": 1,
     "_accTime": 0,
     "_playCount": 0,
@@ -100,7 +99,7 @@
     "_N$skeletonData": {
       "__uuid__": "d00090bb-c614-49aa-9148-4272fc4e061a"
     },
-    "_N$_defaultRenderMode": 1,
+    "_N$_defaultCacheMode": 1,
     "_N$debugSlots": false,
     "_N$debugBones": false,
     "_N$useTint": false,

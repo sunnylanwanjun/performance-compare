@@ -144,6 +144,8 @@ class SheepView extends egret.DisplayObjectContainer {
         }
         this.setChildIndex(this.number, this.numChildren - 1);
         this.number.text = this.count;
+        // 只添加一次，方便控制数量
+        this.isAdding = false;
     }
     
     private  onEnterFrame(e:egret.Event){
