@@ -21,6 +21,9 @@ cc.Class({
             case 'dragonbones':
                 cc.director.loadScene('dragonbones');
                 break;
+            case 'loading':
+                cc.director.loadScene('loading');
+                break;
             case 'progress-text':
                 cc.director.loadScene('progress-text');
                 break;

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="custom.loading" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="background" source="background_png" touchEnabled="true" right="0" bottom="0" left="0" top="0" name="background"/>
+	<e:Label id="log" text="log" x="70" y="61.55" backgroundColor="0x848484" visible="true" background="true" blendMode="normal" anchorOffsetX="0" width="500" anchorOffsetY="0" height="500" name="log"/>
+	<e:Label text="loading test" x="70" y="21.55" background="true" textColor="0x111111" height="40"/>
+	<e:Button id="back" label="back" x="443.12" y="673" name="back" touchEnabled="true"/>
+	<e:Button id="loadAssets" label="loadAssets" x="90" y="596" name="loadAssets" touchEnabled="true"/>
+	<e:Button id="download" label="download" x="276.12" y="596" name="download" enabled="true" touchEnabled="true" touchChildren="true"/>
+	<e:Button id="instantiate" label="instantiate" x="78.6" y="673" name="instantiate" touchEnabled="true" anchorOffsetX="0" width="156.49"/>
+	<e:Button id="deserialize" label="deserialize" x="271.12" y="673" name="deserialize" touchEnabled="true"/>
+</e:Skin>
