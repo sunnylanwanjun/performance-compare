@@ -1,13 +1,15 @@
 {
-  "ver": "2.2.0",
+  "ver": "2.3.2",
   "uuid": "9cd99e7b-be76-40e1-91f6-9659f2176f76",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "platformSettings": {},
   "subMetas": {
     "1 - 004": {
-      "ver": "1.0.3",
+      "ver": "1.0.4",
       "uuid": "819d94a2-34d3-4740-ac0e-eff2e6063655",
       "rawTextureUuid": "9cd99e7b-be76-40e1-91f6-9659f2176f76",
       "trimType": "auto",

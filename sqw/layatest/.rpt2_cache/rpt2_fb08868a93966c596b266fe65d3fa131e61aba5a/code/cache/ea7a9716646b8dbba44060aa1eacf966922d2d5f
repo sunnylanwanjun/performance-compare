@@ -1,0 +1,8 @@
+{
+  "code": "import { BaseComponent } from \"./BaseComponent\";\r\nimport { RandomMove } from \"./RandomMove\";\r\nimport { RandomLabel } from \"./RandomLabel\";\r\nexport default class UIomponent extends BaseComponent {\r\n    constructor() {\r\n        super();\r\n        this._curSceneName = \"UIScene.scene\";\r\n    }\r\n    add() {\r\n        for (let i = 0; i < this._changeCout; i++) {\r\n            const _x = this.random(0, Laya.stage.width);\r\n            const _y = this.random(0, Laya.stage.height);\r\n            this.createUI(_x, _y, this._container);\r\n        }\r\n    }\r\n    createUI(xPos, yPos, parent = null) {\r\n        const ui = new Laya.Sprite();\r\n        var label = new Laya.Label();\r\n        label.addComponent(RandomLabel);\r\n        label.fontSize = 20;\r\n        label.font = \"Arial\";\r\n        label.bold = true;\r\n        label.leading = 4;\r\n        label.color = \"#00ff00\";\r\n        ui.addChild(label);\r\n        ui.addComponent(RandomMove);\r\n        ui.pos(xPos, yPos);\r\n        if (parent) {\r\n            parent.addChild(ui);\r\n        }\r\n        return ui;\r\n    }\r\n}\r\n",
+  "references": [
+    "/Users/mac/Documents/cocos_work/performance-compare/sqw/layatest/src/BaseComponent.ts",
+    "/Users/mac/Documents/cocos_work/performance-compare/sqw/layatest/src/RandomMove.ts",
+    "/Users/mac/Documents/cocos_work/performance-compare/sqw/layatest/src/RandomLabel.ts"
+  ]
+}

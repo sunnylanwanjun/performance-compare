@@ -1,0 +1,4 @@
+{
+  "code": "export default class SkeletonComponent extends Laya.Script {\r\n    constructor() { super(); }\r\n    onAwake() {\r\n        this._backBtn = this.owner.getChildByName(\"backBtn\");\r\n    }\r\n    onEnable() {\r\n        this._backBtn.on(Laya.Event.CLICK, this, this.onBackBtn);\r\n    }\r\n    onDisable() {\r\n        this._backBtn.off(Laya.Event.CLICK, this, this.onBackBtn);\r\n    }\r\n    onBackBtn() {\r\n        Laya.Scene.destroy(\"SkeletonScene.scene\");\r\n        Laya.Scene.open(\"StartScene.scene\");\r\n    }\r\n}\r\n",
+  "references": []
+}

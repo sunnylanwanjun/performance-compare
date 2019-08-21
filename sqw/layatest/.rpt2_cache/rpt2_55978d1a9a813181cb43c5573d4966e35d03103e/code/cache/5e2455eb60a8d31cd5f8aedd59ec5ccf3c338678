@@ -1,0 +1,4 @@
+{
+  "code": "export default class StartComponent extends Laya.Script {\r\n    constructor() { super(); }\r\n    onAwake() {\r\n        this._spriteBtn = this.owner.getChildByName(\"spriteBtn\");\r\n    }\r\n    onEnable() {\r\n        this._spriteBtn.on(Laya.Event.CLICK, this, this.onSpriteBtn);\r\n    }\r\n    onDisable() {\r\n    }\r\n    onSpriteBtn() {\r\n        console.log(\"click sprite btn\");\r\n    }\r\n}\r\n",
+  "references": []
+}

@@ -1,0 +1,4 @@
+{
+  "code": "const OriginLabel = '12345abcde一二三四五12345abcde一二三四五';\r\nconst OriginLength = OriginLabel.length / 2;\r\nlet random = function (from, end) {\r\n    let min = Math.min(from, end);\r\n    let max = Math.max(from, end);\r\n    let range = max - min;\r\n    return min + Math.random() * range;\r\n};\r\nconst RandomArr = [];\r\nfor (let i = 0; i < 100; i++) {\r\n    let a = random(0, OriginLength);\r\n    let text = OriginLabel.substring(a, a + OriginLength);\r\n    RandomArr.push(text);\r\n}\r\nexport class RandomLabel extends Laya.Script {\r\n    constructor() {\r\n        super();\r\n        this._index = 0;\r\n    }\r\n    onUpdate() {\r\n        let label = this.owner;\r\n        this._index++;\r\n        if (this._index >= RandomArr.length) {\r\n            this._index = 0;\r\n        }\r\n        ;\r\n        label.text = RandomArr[this._index];\r\n    }\r\n}\r\n",
+  "references": []
+}

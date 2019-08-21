@@ -1,0 +1,4 @@
+{
+  "code": "export class RandomMove extends Laya.Script {\r\n    constructor() {\r\n        super();\r\n        this._directX = 1;\r\n        this._directY = 1;\r\n        this._addX = 3;\r\n        this._addY = 3;\r\n        this._directX = Math.random() > 0.5 ? -1 : 1;\r\n        this._directY = Math.random() > 0.5 ? -1 : 1;\r\n    }\r\n    onUpdate() {\r\n        let sp = this.owner;\r\n        sp.x += this._addX * this._directX;\r\n        sp.y += this._addY * this._directY;\r\n        if (sp.x > Laya.stage.width || sp.x < 0) {\r\n            this._directX *= -1;\r\n        }\r\n        if (sp.y > Laya.stage.height || sp.y < 0) {\r\n            this._directY *= -1;\r\n        }\r\n    }\r\n}\r\n",
+  "references": []
+}

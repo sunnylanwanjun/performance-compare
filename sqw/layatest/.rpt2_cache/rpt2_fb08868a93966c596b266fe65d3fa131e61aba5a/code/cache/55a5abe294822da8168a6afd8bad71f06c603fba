@@ -1,0 +1,7 @@
+{
+  "code": "import { BaseComponent } from \"./BaseComponent\";\r\nimport { RandomMove } from \"./RandomMove\";\r\nexport default class SpriteComponent extends BaseComponent {\r\n    constructor() {\r\n        super();\r\n        this._curSceneName = \"SpriteScene.scene\";\r\n    }\r\n    add() {\r\n        for (let i = 0; i < this._changeCout; i++) {\r\n            const _x = this.random(0, Laya.stage.width);\r\n            const _y = this.random(0, Laya.stage.height);\r\n            let role = this.createFrameAni(_x, _y, 'custom/frame/Swordsman_attack1.json', this._container);\r\n            role.pivot(94, 172);\r\n            role.interval = 60;\r\n            role.play();\r\n        }\r\n    }\r\n    createFrameAni(xPos, yPos, aniUrl, parent = null) {\r\n        const ani = new Laya.Animation();\r\n        ani.addComponent(RandomMove);\r\n        ani.loadAtlas(aniUrl);\r\n        ani.pos(xPos, yPos);\r\n        if (parent) {\r\n            parent.addChild(ani);\r\n        }\r\n        return ani;\r\n    }\r\n}\r\n",
+  "references": [
+    "/Users/mac/Documents/cocos_work/performance-compare/sqw/layatest/src/BaseComponent.ts",
+    "/Users/mac/Documents/cocos_work/performance-compare/sqw/layatest/src/RandomMove.ts"
+  ]
+}
