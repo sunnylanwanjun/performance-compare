@@ -53,6 +53,7 @@ cc.Class({
 
     del () {
         this.container.destroyAllChildren();
+        this.num.string = this.container.childrenCount;
     },
 
     back () {

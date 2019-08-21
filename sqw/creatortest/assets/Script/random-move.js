@@ -9,16 +9,17 @@ cc.Class({
 
         this.sx = 3;
         this.sy = 3;
-        this.dirx = Math.random() > 0.5 ? -1 : 1;
-        this.diry = Math.random() > 0.5 ? -1 : 1;
+        this.dirX = Math.random() > 0.5 ? -1 : 1;
+        this.dirY = Math.random() > 0.5 ? -1 : 1;
     },
 
     update (dt) {
-        if (this.node.x > this.maxX) this.dirx = -1;
-        if (this.node.x < this.minX) this.dirx = 1;
-        if (this.node.y > this.maxY) this.diry = -1;
-        if (this.node.y < this.minY) this.diry = 1;
-        this.node.x += this.sx*this.dirx;
-        this.node.y += this.sy*this.diry;
+        let node = this.node;
+        if (node.x > this.maxX) this.dirX = -1;
+        if (node.x < this.minX) this.dirX = 1;
+        if (node.y > this.maxY) this.dirY = -1;
+        if (node.y < this.minY) this.dirY = 1;
+        node.x += this.sx * this.dirX;
+        node.y += this.sy * this.dirY;
     }
 })
