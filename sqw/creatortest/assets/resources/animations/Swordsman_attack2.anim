@@ -1,0 +1,49 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Swordsman_attack2",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.08333333333333333,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "60c21484-8a51-421c-9d2e-838ffe3e782b"
+            }
+          },
+          {
+            "frame": 0.016666666666666666,
+            "value": {
+              "__uuid__": "0406f83c-1d6f-4c11-b34d-ff4b9c11fbf0"
+            }
+          },
+          {
+            "frame": 0.03333333333333333,
+            "value": {
+              "__uuid__": "40b35285-7fc8-4644-9f20-80d695deb63b"
+            }
+          },
+          {
+            "frame": 0.05,
+            "value": {
+              "__uuid__": "f1fe7050-8726-44f2-b7aa-df0b82db2f5d"
+            }
+          },
+          {
+            "frame": 0.06666666666666667,
+            "value": {
+              "__uuid__": "3e1d69b3-bc0d-4c7f-84f4-ef01adb20a83"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

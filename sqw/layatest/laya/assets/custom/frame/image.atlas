@@ -1,0 +1,93 @@
+{
+    "frames": {
+        "a.png": {
+            "frame": {
+                "h": 43,
+                "idx": 0,
+                "w": 26,
+                "x": 0,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 46,
+                "w": 30
+            },
+            "spriteSourceSize": {
+                "x": 2,
+                "y": 2
+            }
+        },
+        "b.png": {
+            "frame": {
+                "h": 37,
+                "idx": 0,
+                "w": 26,
+                "x": 54,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 40,
+                "w": 30
+            },
+            "spriteSourceSize": {
+                "x": 2,
+                "y": 2
+            }
+        },
+        "c.png": {
+            "frame": {
+                "h": 37,
+                "idx": 0,
+                "w": 26,
+                "x": 27,
+                "y": 38
+            },
+            "sourceSize": {
+                "h": 40,
+                "w": 30
+            },
+            "spriteSourceSize": {
+                "x": 2,
+                "y": 2
+            }
+        },
+        "d.png": {
+            "frame": {
+                "h": 37,
+                "idx": 0,
+                "w": 26,
+                "x": 54,
+                "y": 38
+            },
+            "sourceSize": {
+                "h": 40,
+                "w": 30
+            },
+            "spriteSourceSize": {
+                "x": 2,
+                "y": 2
+            }
+        },
+        "e.png": {
+            "frame": {
+                "h": 37,
+                "idx": 0,
+                "w": 26,
+                "x": 27,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 41,
+                "w": 30
+            },
+            "spriteSourceSize": {
+                "x": 2,
+                "y": 2
+            }
+        }
+    },
+    "meta": {
+        "image": "image.png",
+        "prefix": "image/"
+    }
+}
